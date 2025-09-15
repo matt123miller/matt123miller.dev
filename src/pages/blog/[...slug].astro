@@ -35,7 +35,6 @@ const { Content } = await entry.render();
     <div>
       {entry.data.tags.map((tag) => <Badge class="mr-4">{tag}</Badge>)}
       <span class="text-comment pt-1 mr-4">
-        <!-- {entry.data.date.toLocaleDateString()} -->
         <FormattedDate date={entry.data.date} />
       </span>
       <a

@@ -20,10 +20,10 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-background selection:text-selection">
-    <div id="page-wrapper">
+    <div id="page-wrapper" class="flex flex-col min-h-screen">
       <Header siteTitle={"hello world"} />
       <main
-        class="flex flex-col max-w-full main-content-container prose prose-dracula"
+        class="flex flex-col grow h-full max-w-full main-content-container prose prose-dracula selection:bg-pink selection:text-selection"
       >
         <slot />
       </main>
