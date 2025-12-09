@@ -28,31 +28,19 @@ This project has the following structure and files.
 └── package.json
 ```
 
-## Rest of the Astro starter readme
+## Docker
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+You can build the repo like so 
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+`docker build -t m11r/personal-site:0.1 .`
 
-Any static assets, like images, can be placed in the `public/` directory.
+Then run it like so
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+`???` idk tbh
 
 ## TODO list
 
 - 404 page
 - content meta for sharing
 - [sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)
-- [Better vercel integration](https://vercel.com/docs/frameworks/astro)
-- Replace `sharp` with vercel image service
+- Host on my own VPS instead of vercel
