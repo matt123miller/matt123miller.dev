@@ -12,7 +12,7 @@ const blogEntries = await getCollection("blog", isPublishedCheck);
 const pages = blogEntries
   .map((entry) => {
     return {
-      slug: entry.slug,
+      slug: entry.id,
       title: entry.data.title,
       date: entry.data.date,
       description: entry.data.description,

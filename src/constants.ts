@@ -1,4 +1,4 @@
-import packageJson from "../package.json" assert { type: "json" };
+import packageJson from "../package.json" with { type: "json" };
 
 const baseUrl = "https://matt123miller.dev";
 const github = "https://github.com/matt123miller";

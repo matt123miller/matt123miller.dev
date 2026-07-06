@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 import Badge from "@/components/Badge/index.astro";
 import FormattedDate from "@/components/FormattedDate/index.astro";
@@ -14,7 +14,7 @@ export async function getStaticPaths() {
     // Can replace main with your development branch if needed.
     const editUrl = `${links.siteRepo}/tree/main/src/content/blog/${entry.id}`;
     return {
-      params: { slug: entry.slug },
+      params: { slug: entry.id },
       props: {
         entry,
         editUrl,
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 }
 
 const { entry, editUrl } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 ---
 
 <Layout title={entry.data.title}>
