@@ -32,11 +32,11 @@ This project has the following structure and files.
 
 You can build the repo like so 
 
-`docker build -t m11r/personal-site:0.1 .`
+`docker build -t m11r/personal-site:latest .`
 
 Then run it like so
 
-`???` idk tbh
+`docker run -p 4321:80 m11r/personal-site:latest`
 
 ## TODO list
 
